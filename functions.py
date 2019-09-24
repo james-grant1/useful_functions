@@ -6,7 +6,12 @@ def mean(this_list):
     if len(this_list) <= 0:
         return "You passed an empty list"
     
+    list_example = [1.0,2.0]
+    
+    if type(this_list) != type(list_example):
+        return "You didn't pass a list"
+    
     total=0
-    for item in list:
-        total = total + list
-    return total/len(list)
+    for item in this_list:
+        total = total + item
+    return total/len(this_list)
